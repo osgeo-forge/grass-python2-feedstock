@@ -1,0 +1,32 @@
+{% set version = "7.4.4" %}
+
+package:
+  name: grass-python2
+  version: {{ version }}
+
+source:
+  - path: .
+
+build:
+  number: 1000
+  skip_compile_pyc:
+    - "*/*.py"
+
+requirements:
+  build:
+  host:
+    - python2
+  run:
+    - python2
+
+about:
+  home: https://grass.osgeo.org
+  license: PSF
+  summary: Python 2 packages for GRASS 7
+  description: Python 2 packages for GRASS 7. See recipe directory for package licenses.
+  doc_url: https://grass.osgeo.org/grass74/source/REQUIREMENTS.html
+  dev_url: https://grasswiki.osgeo.org/wiki/Compile_and_Install
+
+extra:
+  recipe-maintainers:
+    - dakcarto
