@@ -8,7 +8,7 @@ source:
   - path: .
 
 build:
-  number: 1000
+  number: 1001
   skip_compile_pyc:
     - "*/*.py"
 
@@ -17,6 +17,10 @@ requirements:
   host:
     - python2
   run:
+    # python2 pkg is not a run requiremnt, if a python2 (>=2.7.15) is found on PATH
+
+test:
+  requires:
     - python2
 
 about:
