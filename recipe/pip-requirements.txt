@@ -1,0 +1,5 @@
+# file name is NOT requirements.txt, to avoid run auto-dependencies in Py3
+matplotlib
+numpy
+wxpython
+pillow
