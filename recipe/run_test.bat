@@ -1,5 +1,5 @@
 if "%LIBRARY_PREFIX%" == "" (
-  set "LIBRARY_PREFIX=%CONDA_PREFIX%\Library"
+  set "LIBRARY_PREFIX=%PREFIX%\Library"
 )
 
 if not exist "%LIBRARY_PREFIX%\" (
